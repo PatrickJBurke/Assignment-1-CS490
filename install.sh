@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+mkdir /users/paburke/new_folder
+
 sudo apt-get update -y
 sudo apt-get install htop -y
 mkdir -p ~/miniconda3
