@@ -11,6 +11,19 @@ rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
 
+if [ ! -d /users/paburke/data_folder ]; then
+	mkdir /users/paburke/data_folder
+else
+	echo "folder already exists"
+fi
+
+if [ -f /users/paburke/output.txt ]; then
+	echo "*******************" >> /users/paburke/output.txt
+	ls /users/paburke >> /users/paburke/output.txt
+fi
+
+#ls /users/paburke >> /users/paburke/output.txt
+
 SHARE_DIR="/users/paburke"
 
 if [[ $# -lt 1 ]];
